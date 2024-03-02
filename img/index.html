@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bull Fitness</title>
+</head>
+<!-- To link css file -->
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Ubuntu', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('OIP1.jpg');
+        /* height: 1200px; */
+        /* Url should be same as written on left hand side */
+
+    }
+
+    .left {
+        /* Display inline block used to reduce the width of a class content or box as per the content width or box .
+        Display block mean to begin an element from next line and give full width as per his parent*/
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        /* border: 2px solid red; */
+    }
+
+    .left img {
+        width: 117px;
+        border-radius: 50%;
+        filter: invert(100%);
+        position: relative;
+        left: 45px;
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 29px;
+        line-height: 29px;
+    }
+
+    .mid {
+        display: block;
+        position: relative;
+        left: 30px;
+        width: 50%;
+        margin: 15px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        display: inline-block;
+        top: 13px;
+        right: 13px;
+        /* Position absolute to give margin for a box or content left, right, top and bottom in copmparion of his parent(header or container).
+        Position relative to give margin in comparison of his previous position of box or content.
+        Position static is default position as per CSS.
+        Position fixed is used for a chat box it can fixed the position of a box even if you scroll the page but it fixed as per browser window left right top bottom. 
+        Position sticky is used for navbar to stick navbar as per his browser window even if you scroll but remains at his top position*/
+        position: absolute;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        font-size: 20px;
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 14px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        color: rgb(249, 205, 205);
+        text-decoration: underline;
+    }
+
+    .btn {
+        font-family: 'Ubuntu', sans-serif;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 4px 6px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(43, 42, 42);
+    }
+
+    .container {
+        /* border: 2px solid white; */
+        margin: 59px 0px;
+        padding: 2px 6px;
+        width: 90%;
+        border-radius: 26px;
+        text-align: center;
+    }
+
+    .form-group input {
+        width: 335px;
+        padding: 6px;
+        margin: 6px auto;
+        border: 2px solid black;
+        display: block;
+        text-align: center;
+        border-radius: 30px;
+        font-size: 15px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .container button {
+        display: block;
+        width: 350px;
+        margin: 10px 402px;
+        padding: 8px;
+        border-radius: 23px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <img src="logo.png" alt="">
+            <div>Bull Fitness
+                Gym</div>
+        </div>
+        <div class="mid">
+            <!-- mid box for navbar -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness Club</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- right box for search button -->
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best Gym of Ghaziabad now</h1>
+        <form action="noaction.php"></form>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Locality">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Phone Number">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Email">
+        </div>
+        <button class="btn">Submit now</button>
+    </div>
+</body>
+
+</html>
